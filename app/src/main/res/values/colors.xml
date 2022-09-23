@@ -5,6 +5,20 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+  <!--  <color name="colorPrimary">#c44c02</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+    <color name="colorAccent">#d10255</color>
+    <color name="title">#FF5722</color>
+    <color name="trans">@android:color/transparent</color>
+    <color name="white">#fff</color>
+    <color name="red">#ff0000</color>-->
+
+    <color name="colorPrimary">#023560</color>
+    <color name="colorPrimaryDark">#023560</color>
+    <color name="colorAccent">#008000</color>
+    <color name="title">#ea023560</color>
+    <color name="trans">@android:color/transparent</color>
+    <color name="white">#fff7f7</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#030000</color>
 </resources>
