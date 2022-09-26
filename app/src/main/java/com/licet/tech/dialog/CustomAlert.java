@@ -8,18 +8,13 @@ import android.view.View;
 import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
-
-
 import com.licet.tech.R;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class CustomAlert extends Dialog {
     protected Activity activity;
-
     @BindView(R.id.cancel_block)
     public LinearLayout cancel_block;
     @BindView(R.id.tv_header)

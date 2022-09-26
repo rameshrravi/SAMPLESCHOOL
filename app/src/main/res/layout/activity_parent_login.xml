@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ParentLogin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_marginTop="75dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/shortcut"
+            android:id="@+id/imageView2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10pt"
+            android:paddingRight="10pt"
+            android:layout_marginTop="20pt"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/p_login_username"
+                    android:layout_weight="1"
+                    android:hint="Mobile Number"
+                    android:textSize="7pt"
+                    android:textColorHint="@color/title"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingRight="5dp"
+                    android:background="@color/trans"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/login_u"
+                    android:layout_gravity="center"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#111"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/p_login_password"
+                    android:layout_weight="1"
+                    android:hint="Password"
+                    android:textSize="7pt"
+                    android:textColorHint="@color/title"
+                    android:textColor="#000"
+                    android:inputType="textPassword"
+                    android:paddingRight="5dp"
+                    android:background="@color/trans"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/login_p"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#111"/>
+
+            <CheckBox
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:textSize="7pt"
+                android:gravity="center"
+                android:layout_marginRight="10pt"
+                android:id="@+id/notification"
+                android:layout_marginLeft="10pt"
+                android:text="Get notifications for this mobile "/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:textColor="#fff"
+                android:text="Login"
+                android:id="@+id/parent_login_button"
+                android:layout_marginTop="30dp"
+                android:background="@color/title"
+                android:onClick="parent"
+                android:layout_height="45dp" />
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#294a70"
+                android:layout_marginTop="20dp"
+                android:text="@string/com_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

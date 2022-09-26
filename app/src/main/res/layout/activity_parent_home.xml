@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ParentHome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:background="@color/colorPrimary"
+        android:layout_height="55dp"
+        tools:ignore="MissingConstraints">
+
+
+
+
+        <ImageView
+            android:gravity="center"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "6.5"
+            android:background = "@color/colorPrimary"
+            android:ellipsize = "end"
+            android:src="@drawable/bar_header"
+            android:textColor="#fff"
+            />
+
+        <ImageView
+            android:textAllCaps="true"
+            android:layout_width = "5pt"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "0.5"
+            android:background = "@color/colorPrimary"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:onClick="logout"
+            android:src="@drawable/pop"
+            android:gravity="center"
+            android:singleLine = "true"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/parent_profile"
+                    android:src="@drawable/profile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/p_calender"
+                    android:background="@drawable/border"
+                    android:src="@drawable/alendar"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:id="@+id/parent_attendence"
+                    android:src="@drawable/attentace"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:src="@drawable/result"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/parent_result"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:id="@+id/parent_homework"
+                    android:src="@drawable/homework"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:src="@drawable/circular"
+                    android:id="@+id/parent_circular"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:src="@drawable/te"
+                    android:id="@+id/parent_teacher_remark"
+                    android:onClick="infra"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:src="@drawable/leave"
+                    android:id="@+id/infra"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/leaveform"
+                    android:background="@drawable/border"
+                    android:src="@drawable/leaveapplication"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:id="@+id/parent_feestructure"
+                    android:src="@drawable/newfee"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:id="@+id/parent_weblink"
+                    android:src="@drawable/weblink"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:src="@drawable/live"
+                    android:id="@+id/coming"
+                    android:onClick="come"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:id="@+id/message"
+                    android:src="@drawable/message"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="110dp" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="110dp" />
+
+
+
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="110dp" />
+            </LinearLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="5pt"
+                android:textColor="#294a70"
+                android:text="©LICET TECHNOLOGIES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
