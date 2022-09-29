@@ -3,7 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/drawable/border.xml" value="0.1415" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/activity_home_work.xml" value="0.25" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/activity_parent_feedback.xml" value="0.14444444444444443" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/activity_parent_home.xml" value="0.21" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/activity_parent_login.xml" value="0.25" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/activity_splash.xml" value="0.15925925925925927" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/app_bar_main_book.xml" value="0.18" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/contact_fragment.xml" value="0.33" />
         <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/custom_alert_view.xml" value="0.18645833333333334" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/home_fragment.xml" value="0.25" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/layout/nav_header_main_book.xml" value="0.14444444444444443" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/menu/activity_main_book_drawer.xml" value="0.5" />
+        <entry key="..\:/LicetTech/SchollApp/app/src/main/res/menu/bottommenu.xml" value="0.14444444444444443" />
       </map>
     </option>
   </component>
