@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1062786427087",
+    "project_id": "licet-9c767",
+    "storage_bucket": "licet-9c767.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062786427087:android:5ce28ddb46f2de4819efba",
+        "android_client_info": {
+          "package_name": "com.licet.tech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062786427087-eub94f105j16n82rh9kukkk46jv523ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRlSTsBzuFeHgebLIwnB1oYJq9pwqR1pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062786427087-eub94f105j16n82rh9kukkk46jv523ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
