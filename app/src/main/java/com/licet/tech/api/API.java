@@ -122,7 +122,7 @@ public interface API {
     Call<UpdateProile> UPDATE_PROILE_CALL(@Body JsonObject requestParameter);
     *//*@POST("getPaidBooksByPublishYear")
     Call<ValidateOtpModel> VALIDATE_OTP_MODEL_CALL(@Body JsonObject requestParameter);*/
-    @POST("/apitoken")
+    @POST("signin.php")
     Call<ResponseBody> loginAPI(@Body JsonObject requestParameter);
 
 
