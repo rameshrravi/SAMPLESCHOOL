@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Service {
    // private static final String BASE_URL = "http://jeevambrudham.startupman.in/Api/Api/";
-        private static final String BASE_URL = "http://laundressapi.napeans.com";
+        private static final String BASE_URL = "https://licettechnologies.com/schoolapp/api/";
    // private static final String BASE_URL = "https://diskney.com/jpsr/";
     private static final String GOOGLE_BASE_URL = "https://maps.googleapis.com/maps/api/";
 

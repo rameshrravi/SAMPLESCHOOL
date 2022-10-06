@@ -9,20 +9,23 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.navigation.NavigationView;
+import com.licet.tech.activity.ParentLogin;
 import com.licet.tech.fragment.AdmissionFragment;
 import com.licet.tech.fragment.ContactFragment;
 import com.licet.tech.fragment.GalleryFragment;
 import com.licet.tech.fragment.HomeFragment;
 import com.licet.tech.fragment.ParentFragment;
 import com.licet.tech.fragment.TransportFragment;
+import com.licet.tech.utils.MyPreference;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
-
+MyPreference myPreference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +36,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+        myPreference=new MyPreference(getApplicationContext());
+        Intent intent=this.getIntent();
+        if(intent!=null){
+            if(intent.getStringExtra("status")!=null){
+                String loginstatus=intent.getStringExtra("status");
+                ParentFragment parentFragment = new ParentFragment();
+                CallFragment(parentFragment);
+            }else {
+                NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+                navigationView.setNavigationItemSelectedListener(this);
+                HomeFragment homeFragment = new HomeFragment();
+                CallFragment(homeFragment);
+            }
+        }
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        HomeFragment homeFragment = new HomeFragment();
-        CallFragment(homeFragment);
+
     }
 
 
@@ -77,8 +91,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             CallFragment(transportFragment);
         }
         if (id == R.id.nav_parent_login) {
-            ParentFragment parentFragment = new ParentFragment();
-            CallFragment(parentFragment);
+           String studentID= myPreference.getBookingId(getApplicationContext());
+           if(!studentID.equals("")){
+               ParentFragment parentFragment = new ParentFragment();
+               CallFragment(parentFragment);
+           }else {
+               Intent intent=new Intent(MainActivity.this, ParentLogin.class);
+               startActivity(intent);
+           }
+
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

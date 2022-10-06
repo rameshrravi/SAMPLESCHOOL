@@ -2,6 +2,7 @@ package com.licet.tech.utils;
 
 import static android.content.Context.MODE_PRIVATE;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -99,7 +100,7 @@ public class MyPreference {
 
     public final boolean isInternetOn() {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        @SuppressLint("MissingPermission") NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         if (activeNetwork != null) { // connected to the internet
             if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
                 // connected to wifi

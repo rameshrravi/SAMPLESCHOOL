@@ -21,4 +21,5 @@
     <color name="white">#fff7f7</color>
     <color name="red">#ff0000</color>
     <color name="black">#030000</color>
+    <color name="statusBarColor">#40000000</color>
 </resources>
