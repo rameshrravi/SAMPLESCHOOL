@@ -18,8 +18,11 @@
         android:theme="@style/Theme.SchoolApplication"
         tools:targetApi="31">
         <activity
+            android:name=".activity.AttendenceActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,11 +42,9 @@
             android:name=".activity.ParentLogin"
             android:exported="false" />
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -36,6 +36,7 @@ public class HomeFragment extends Fragment {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("push", MODE_PRIVATE);
         view = inflater.inflate(R.layout.home_fragment, container, false);
         ButterKnife.bind(this, view);
+        myPreference=new MyPreference(getActivity());
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
         file_maps.put("SSMHSS Campus", R.drawable.slider1);
         file_maps.put("Yoga for Students",R.drawable.banner2);

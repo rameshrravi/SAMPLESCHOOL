@@ -124,6 +124,8 @@ public interface API {
     Call<ValidateOtpModel> VALIDATE_OTP_MODEL_CALL(@Body JsonObject requestParameter);*/
     @POST("signin.php")
     Call<ResponseBody> loginAPI(@Body JsonObject requestParameter);
+    @POST("attendanceList.php")
+    Call<ResponseBody> attendenceAPI(@Body JsonObject requestParameter);
 
 
     @POST("/api/account/userinfo")

@@ -71,23 +71,43 @@ public class MyPreference {
     public String[] getDefaultRunTimeValue() {
         String[] Value = new String[17];
         SharedPreferences prefs = context.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
-        String restoredText = prefs.getString("AccessToken", null);
-        if (restoredText != null) {
             Value[0] = prefs.getString("AccessToken", "no data");//"No AccessToken Defined" is the default value.
             Value[1] = prefs.getString("DeviceId", "no data");//"No DeviceId Defined" is the default value.
-            Value[2] = prefs.getString("AccessType", "Blank Value");
-            Value[3] = prefs.getString("ProfilePic", "");
-            Value[4] = prefs.getString("MoblieNumber", "");
-            Value[5] = prefs.getString("Password", "");
-            Value[6] = prefs.getString("CheckBoxTrue", "0");
-            Value[7] = prefs.getString("FacebookLogout", "fblogout");
-            Value[8] = prefs.getString("login", "");
+            Value[2] = prefs.getString("student_name", "");
+            Value[3] = prefs.getString("std_id", "");
+            Value[4] = prefs.getString("std_name", "");
+            Value[5] = prefs.getString("section_id", "");
+            Value[6] = prefs.getString("section_name", "");
+            Value[7] = prefs.getString("father_name", "");
+            Value[8] = prefs.getString("mother_name", "");
+            Value[9] = prefs.getString("admission_no", "");
+            Value[10] = prefs.getString("password", "");
+            Value[11] = prefs.getString("token", "");
+            Value[12] = prefs.getString("user_id", "");
 
-
-        }
         return Value;
     }
-
+    public void setStuentDetails(Context mContext, String AccessToken,
+                                 String DeviceId, String student_name, String std_id, String std_name,
+                                 String section_id, String section_name, String father_name, String mother_name, String admission_no,
+                                 String password, String token,String user_id) {
+        SharedPreferences mPrefs = mContext.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
+        SharedPreferences.Editor prefsEditor = mPrefs.edit();
+        prefsEditor.putString("AccessToken", AccessToken);
+        prefsEditor.putString("DeviceId", DeviceId);
+        prefsEditor.putString("student_name", student_name);
+        prefsEditor.putString("std_id", std_id);
+        prefsEditor.putString("std_name", std_name);
+        prefsEditor.putString("section_id", section_id);
+        prefsEditor.putString("section_name", section_name);
+        prefsEditor.putString("father_name", father_name);
+        prefsEditor.putString("mother_name", mother_name);
+        prefsEditor.putString("admission_no", admission_no);
+        prefsEditor.putString("password", password);
+        prefsEditor.putString("token", token);
+        prefsEditor.putString("user_id", user_id);
+        prefsEditor.commit();
+    }
     public String getLocationAccessToken() {
         String Value = null;
         SharedPreferences prefs = context.getSharedPreferences(MY_LOCATION, MODE_PRIVATE);
