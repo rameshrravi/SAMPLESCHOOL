@@ -305,13 +305,15 @@ public class MyPreference {
 
 
     //timeofbirth
-    public void setLoginAccessToken(
+    public void setFCMAccessToken(Context context,
             String AccessToken) {
+        SharedPreferences mPrefs = context.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
+        SharedPreferences.Editor prefsEditor = mPrefs.edit();
         prefsEditor.putString(loginAccessToken, AccessToken);
         prefsEditor.commit();
     }
 
-    public String getLoginAccessToken(Context mContext) {
+    public String getFCMAccessToken(Context mContext) {
         SharedPreferences mPrefs = mContext.getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
         String AccessToken = mPrefs.getString(loginAccessToken, "");
         return AccessToken;

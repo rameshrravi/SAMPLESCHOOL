@@ -2,6 +2,7 @@ package com.licet.tech.activity;
 
 import static com.licet.tech.api.Service.createServiceHeader;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -14,7 +15,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.JsonObject;
 import com.licet.tech.MainActivity;
 import com.licet.tech.R;
@@ -42,7 +47,7 @@ public class ParentLogin extends AppCompatActivity implements View.OnClickListen
     private MyPreference myPreference;
     private ProgressDialog progressBar;
     String android_id="";
-
+    private static final String TAG = "ParentLogin";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,15 +57,17 @@ public class ParentLogin extends AppCompatActivity implements View.OnClickListen
         parent_login_button.setOnClickListener(this);
         android_id = Settings.Secure.getString(getApplicationContext().getContentResolver(),
                 Settings.Secure.ANDROID_ID);
+        logRegToken();
     }
 
     public void loginAPI() {
         Call<ResponseBody> call = null;
         API apiService = createServiceHeader(API.class);
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("token", "asasasasasasasasasasas");
+        jsonObject.addProperty("token", myPreference.getFCMAccessToken(getApplicationContext()));
         jsonObject.addProperty("admission_no", p_login_username.getText().toString());
         jsonObject.addProperty("password", p_login_password.getText().toString());
+        Log.i("LoginMethod",jsonObject.toString());
         call = apiService.loginAPI(jsonObject);
         call.enqueue(new Callback<ResponseBody>() {
             @Override
@@ -143,5 +150,27 @@ public class ParentLogin extends AppCompatActivity implements View.OnClickListen
             }
         }
 
+    }
+    private void logRegToken() {
+        // [START log_reg_token]
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(@NonNull Task<String> task) {
+                        if (!task.isSuccessful()) {
+                            Log.w(TAG, "Fetching FCM registration token failed", task.getException());
+                            return;
+                        }
+
+                        // Get new FCM registration token
+                        String token = task.getResult();
+                        // Log and toast
+                        String msg = "FCM Registration token: " + token;
+                        myPreference.setFCMAccessToken(getApplicationContext(),token);
+                        Log.d(TAG, msg);
+                       // Toast.makeText(ParentLogin.this, msg, Toast.LENGTH_SHORT).show();
+                    }
+                });
+        // [END log_reg_token]
     }
 }

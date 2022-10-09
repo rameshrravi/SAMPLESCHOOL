@@ -71,6 +71,7 @@ MyPreference myPreference;
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.nav_home) {
+
             HomeFragment homeFragment = new HomeFragment();
             CallFragment(homeFragment);
         }
