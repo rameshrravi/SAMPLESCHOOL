@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".activity.LeaveActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/header"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/bar_header"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/leaveform"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Student Name "
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:id="@+id/p6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=": "
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:id="@+id/l_studentname" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Class"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:id="@+id/p7" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=": "
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:id="@+id/l_class" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Section"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:id="@+id/p8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=": "
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:id="@+id/l_section" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Father Name"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:id="@+id/p9" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=": "
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:id="@+id/l_fathername" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mobile No"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:id="@+id/p10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=": "
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:id="@+id/l_mobile" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="1dp"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:text="Number Of Days Leave"
+
+            android:textSize="15dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/l_noofdays"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:text="Date"
+
+
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:focusable="false"
+            android:id="@+id/l_single_date"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="150dp"
+                android:id="@+id/fromid"
+                android:layout_weight="1"
+                android:hint="From"
+                android:focusable="false"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:layout_height="45dp">
+
+            </EditText>
+
+            <EditText
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:id="@+id/toid"
+                android:hint="To"
+                android:focusable="false"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:layout_height="45dp">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:text="Reason For Leave"
+
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:hint="submit with few words"
+            android:id="@+id/l_reason"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:layout_gravity="top"
+            android:layout_marginTop="20dp"
+            android:id="@+id/l_apply"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Apply Now"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Already Taken Leave : Please Click Here"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="6pt"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/take_leave_tv" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="55dp"
+                   android:background="@color/colorPrimary"
+                   android:src="@drawable/bar_header"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                   android:id="@+id/rel"
+                   android:background="@drawable/profs"
+                   android:layout_height="250dp">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="250dp">
+
+                       <ImageView
+                           android:id="@+id/profile_image"
+                           android:layout_width="match_parent"
+                           android:layout_height="150dp"
+                           android:layout_marginTop="20dp"
+                           android:foregroundGravity="center" />
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:textColor="#fff"
+                           android:textSize="25dp"
+                           android:text=""
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_above="@+id/stu_class"
+                           android:layout_marginTop="10dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/stu_name" />
+
+                       <TextView
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:textAppearance="?android:attr/textAppearanceMedium"
+                           android:layout_marginTop="7dp"
+                           android:text=""
+                           android:paddingBottom="10dp"
+                           android:gravity="center"
+                           android:layout_alignParentBottom="true"
+                           android:textColor="#fff"
+                           android:textSize="17dp"
+                           android:id="@+id/stu_class" />
+                   </RelativeLayout>
+
+
+
+               </LinearLayout>
+               </LinearLayout>
+               <ImageView
+                   android:layout_marginLeft="5dp"
+                   android:src="@drawable/ic_baseline_arrow_back_24"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/_35sdp"
+                   app:tint="@color/white" />
+           </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Standard"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="#008000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/p1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Admission No"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:id="@+id/padm" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/stu_adm_no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Gender"
+
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:id="@+id/p2" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/stu_gender" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date Of Birth"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+
+
+                android:id="@+id/p3" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:id="@+id/stu_dateofbirth" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Blood Group"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:id="@+id/p4" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:id="@+id/stu_blodd" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Contact Informations"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/p5" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Father Name"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+
+                android:textSize="17dp"
+                android:id="@+id/p6" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_father" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mother Name"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:id="@+id/p7" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_mother" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Father Number"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/p8" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_father_no" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mother Number"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/p9" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_mother_no" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Address"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/p12" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_address" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Area"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/p_area" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_area" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="District"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/p13" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_district" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_height="40dp"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pincode"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/p14" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/stu_pincode" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:visibility="gone"
+            android:layout_height="5dp"/>
+    </LinearLayout>
+
+</ScrollView>

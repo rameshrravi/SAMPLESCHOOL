@@ -2,6 +2,7 @@ package com.licet.tech.api;
 
 
 import com.google.gson.JsonObject;
+import com.licet.tech.model.StudentDetail;
 
 import java.util.ArrayList;
 
@@ -126,6 +127,8 @@ public interface API {
     Call<ResponseBody> loginAPI(@Body JsonObject requestParameter);
     @POST("attendanceList.php")
     Call<ResponseBody> attendenceAPI(@Body JsonObject requestParameter);
+    @POST("studentProfile.php")
+    Call<StudentDetail> studentProfile(@Body JsonObject requestParameter);
 
 
     @POST("/api/account/userinfo")

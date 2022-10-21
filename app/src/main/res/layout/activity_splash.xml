@@ -4,9 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".activity.SplashActivity">
-    <ImageView
-        android:src="@mipmap/ic_launcher"
+    <TextView
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Scholl App"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

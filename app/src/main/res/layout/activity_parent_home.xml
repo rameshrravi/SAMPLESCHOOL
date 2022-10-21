@@ -206,8 +206,8 @@
                     android:layout_width="150dp"
                     android:layout_weight="1"
                     android:background="@drawable/border"
-                    android:id="@+id/parent_weblink"
-                    android:src="@drawable/weblink"
+                    android:id="@+id/message"
+                    android:src="@drawable/message"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="5dp"
@@ -215,6 +215,7 @@
                     android:layout_height="110dp" />
 
                 <ImageView
+                    android:visibility="invisible"
                     android:layout_width="150dp"
                     android:layout_weight="1"
                     android:background="@drawable/border"
@@ -234,17 +235,7 @@
                 android:layout_height="wrap_content">
 
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/border"
-                    android:id="@+id/message"
-                    android:src="@drawable/message"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_height="110dp" />
+
 
                 <ImageView
                     android:visibility="invisible"
@@ -279,7 +270,7 @@
                 android:gravity="center"
                 android:textSize="5pt"
                 android:textColor="#294a70"
-                android:text="©LICET TECHNOLOGIES"
+                android:text="© LICET TECHNOLOGIES"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

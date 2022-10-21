@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingBottom="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id = "@+id/fee_term"
+        android:layout_width = "match_parent"
+        android:layout_height = "45dp"
+       android:gravity="center"
+       android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:text = "term"
+        android:singleLine = "true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1.5"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Amount"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:singleLine = "true" />
+
+        <TextView
+            android:textAllCaps="true"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1.5"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Due date"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:singleLine = "true" />
+
+        <TextView
+            android:textAllCaps="true"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1.5"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text = "status"
+            android:singleLine = "true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id = "@+id/fee_amount"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1.5"
+        android:background = "@drawable/cell_shape"
+        android:ellipsize = "end"
+        android:padding = "5dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text = "1000"
+        android:singleLine = "true" />
+
+    <TextView
+        android:id = "@+id/fee_date"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1.5"
+        android:background = "@drawable/cell_shape"
+        android:ellipsize = "end"
+        android:padding = "5dp"
+        android:text = "date"
+        android:textColor="#000"
+        android:gravity="center"
+        android:singleLine = "true" />
+
+    <TextView
+        android:id = "@+id/fee_status"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1.5"
+        android:background = "@drawable/cell_shape"
+        android:ellipsize = "end"
+        android:padding = "5dp"
+        android:textColor="#000"
+        android:text = "status"
+        android:gravity="center"
+        android:singleLine = "true" />
+
+
+</LinearLayout>
+</LinearLayout>

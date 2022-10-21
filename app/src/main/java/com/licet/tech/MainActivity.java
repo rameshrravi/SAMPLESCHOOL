@@ -42,12 +42,12 @@ MyPreference myPreference;
             if(intent.getStringExtra("status")!=null){
                 String loginstatus=intent.getStringExtra("status");
                 ParentFragment parentFragment = new ParentFragment();
-                CallFragment(parentFragment);
+                CallFragmentReplace(parentFragment);
             }else {
                 NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
                 navigationView.setNavigationItemSelectedListener(this);
                 HomeFragment homeFragment = new HomeFragment();
-                CallFragment(homeFragment);
+                CallFragmentReplace(homeFragment);
             }
         }
 
@@ -59,6 +59,11 @@ MyPreference myPreference;
         FragmentTransaction transactionss = getSupportFragmentManager().beginTransaction();
         transactionss.add(R.id.frame, fragment);
         transactionss.addToBackStack("NewFragment");
+        transactionss.commit();
+    }
+    public void CallFragmentReplace(Fragment fragment) {
+        FragmentTransaction transactionss = getSupportFragmentManager().beginTransaction();
+        transactionss.replace(R.id.frame,fragment,"") ;
         transactionss.commit();
     }
 
